@@ -1,3 +1,7 @@
+ifdef::env-github[]
+:imagesdir: https://github.com/michalpalaxo/asciidoctest/tree/master/images
+endif::[]
+
 = CIRCULARO USER MANAGEMENT
 
 == Introduction
