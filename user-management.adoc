@@ -1,5 +1,8 @@
 ifdef::env-github[]
-:imagesdir: https://github.com/michalpalaxo/asciidoctest/tree/master/images
+:imagesdir: https://github.com/michalpalaxo/asciidoctest/blob/master/images
+endif::[]
+ifndef::env-github[]
+:imagesdir: ./images
 endif::[]
 
 = CIRCULARO USER MANAGEMENT
