@@ -1,0 +1,300 @@
+= CIRCULARO USER MANAGEMENT
+
+== Introduction
+
+Every user who wishes to use Circularo must have a dedicated user account. Because of this, every Circularo user only has access to those areas of the system which they have previously been assigned rights. In this way, the system prevents all unauthorized access to information stored within Circularo. In addition, you can limit each user's access to certain functions, so that you can completely avoid incorrect operations. However, you can also provide users with a certain amount of freedom in organizing their documents etc.
+
+In this administration section, you can configure user management. In the following tabs you can create and service all corresponding settings.
+
+* Users
+* Groups
+* ACLs
+* Rights
+
+== Setting up users and groups
+
+You can create each user by his name and assign him to an unlimited number of groups. Each group includes as many users as desired and you can modify it at any time. Users within a group are handled equally and have identical functional rights. The use of groups greatly simplifies user right servicing and maintenance.
+
+== Setting up ACLs and defining rights
+
+By using ACLs, you can define the rights for the various users in your company based on the different job descriptions of people working with Circularo (e.g. editing, viewing, administration, etc.). You can link each group to a specific ACL. You can assign an ACL itself to any number of groups. Since the system uses the ACL name to establish this linkage, you can subsequently modify the rights for each ACL.
+
+It is also possible to define access rights to documents types (see below) by using template specific ACLs. Ideally, for every action or procedure performed in your company connected to Circularo, you can define a corresponding ACL.
+
+== Search Function in the User Administration
+
+Under the tabs, you find the user management Search field.
+
+image::image14.png[Administration search]
+
+
+This function is available for every tab (user, groups, acls, right) in the same way. Enter the search term in the input field. The system lists all entries which contain the search term at the beginning.
+
+== Users
+
+For the maintenance of users the following editing options are available:
+
+* If you want to edit an existing user, click on the appropriate entry in the list of users, the edit dialog will open
+* If you need to create a new user, click the [Add user] button
+* To remove a user, click on the [x] icon on the right side of the user list
+
+image::image2.png[Users list]
+
+
+=== User Properties - "User information"
+
+image::image24.png[Users properties]
+
+
+In the "User information" tab you can create or edit a Circularo user.
+
+
+|===
+|*Parameter*|*Description*
+
+|Username a|
+In the "Username" field, e.g., you can enter the employee acronym used within your company.
+
+Please ensure that the username is unique, i.e., that it has been given only once. In case you try to create second user with the same username, the system will block the request and show an error message.
+
+*NOTE:* Once the system saves the "username" field after closing the dialog box, you cannot modify it afterwards.
+
+|Name a|
+To enter the full name, use the "Name" field.
+
+*NOTE:* This name will be visible for other users in the system. It can be changed in the users preferences.
+
+|Account status a|
+This field indicates the state of the user account, which can be on of the following:
+
+* *Active* - user can log on and use system normally
+* *Newly created* - user has registered in the system, but has not confirmed his activation email yet (used when user registration is enabled)
+* *Trial expired* - trial period for the user has expired - he cant log in to the account anymore and is presented with “trial expired” message.
+* *Suspended* - account has been suspended by administrator. The affected user can no longer log on to the system. The account can be released again when the administrator sets the account status back to active.
+
+|Email a|
+
+To enter the user email, use the "Email" field.
+
+*NOTE:* This email will be used for sending notifications from Circularo (if enabled) as well as for resetting user password.
+
+*NOTE:* This email can be changed by user in user preferences.
+|Password a|
+
+To enter the user password, use the "Password" field.
+
+*NOTE:* The password needs to be at least 6 characters long.
+
+*NOTE:* You can set the employee acronym as the default password and user can change it in his user preferences when he first logs on.
+
+|Group membership a|
+
+In the "Group membership" box of the "User Information" tab you can define the groups to which the currently edited member belongs to.
+
+The groups defines user access permissions and UI element visibility.
+
+*NOTE:* User can be part of any number of groups.
+
+|===
+
+
+=== User Properties - "Personal Details"
+
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image27.png/?raw=true[Users properties]
+
+
+In the "Personal Details" tab you can specify further non-mandatory user parameters. 
+
+
+
+
+|===
+|*Parameter*|*Description*
+
+|Company role a|
+
+In the "Company Role" field, you can enter the user position within the Organization (E.g. CEO)
+
+*NOTE:* The company role will be visible in multiple parts of the system and can be used in workflows and templates.
+
+|Phone|Use this field to enter user telephone number.
+|Location|Use this field to enter users geographical location.
+|Timezone a|
+
+Use this field to specify user timezone.
+
+*NOTE:* This field is useful when users in multiple time zones are using the system, as each user will be presented with time values converted to their local time.
+
+|About User|Use this field to specify any extra information about the user.
+|Active directory link a|
+
+This field is used when active directory login is enabled in the system, it should specify full user distinguished name (DN) in the organization.
+
+*NOTE:* This field is hidden under “Show Active Directory mapping” dropdown by default.
+|===
+
+=== User Properties - "User rights"
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image13.png/?raw=true[Users rights]
+
+
+In the "User rights" tab you can see all rights the user has been assigned.
+
+[NOTE]
+ “User rights” tab is visible only when editing existing user account.
+
+You can use the search bar to find a specific user right.
+
+== Groups
+
+
+For the maintenance of groups the following editing options are available:
+
+* If you want to edit an existing group, click on the appropriate entry in the list of groups, the edit dialog will open
+* If you need to create a new group, click the [Add group] button
+* To remove a group, click on the [x] icon on the right side of the group list
+* To add a subgroup, click on the [+] icon on the right side of the group list
+* To view subgroups, click on the [>] icon on the left side of the group list item
+* To re-arrange group structure use drag and drop gestures
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image19.png/?raw=true[Groups list]
+
+
+=== Group Properties - "Group Details"
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image4.png/?raw=true[Group details]
+
+
+
+
+|===
+|*Parameter*|*Description*
+
+|Group name a|
+
+In the "Group name" field, e.g., you can enter the abbreviated name for the enterprise branch, work group, etc.
+
+Please ensure that the Group name is unique, i.e., that it has been given only once. In case you try to create second group with the same Group name, the system will block the request and show an error message.
+
+*NOTE:* Once the system saves the "Group name" field after closing the dialog box, you cannot modify it afterwards.
+
+|Description|In the "Description" field, you can enter the main scope of group duties.
+|Group members|Here you can specify what users are part of the group. Group can have any number of users.
+|Group ACL a|
+
+Here you can specify what ACLs is the group part of.
+
+*NOTE:* This is the main mechanism of assigning rights to group users.
+
+|Active directory link|This field is used when active directory login is enabled in the system, it should specify full group organizational unit (OU) within the organization.
+|===
+
+== ACLs
+
+|===
+a|
+*What is an ACL?*
+
+The ACL within Circularo is a collection of rights, which can be assigned to groups.
+
+This mechanism ensures high flexibility when designing access permissions.
+|===
+
+
+For the maintenance of acls the following editing options are available:
+
+* If you want to edit an existing acl, click on the appropriate entry in the list of acls, the edit dialog will open
+* If you need to create a new acl, click the [Add acl] button
+* To remove an acl, click on the [x] icon on the right side of the acl list
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image28.png/?raw=true[ACL list]
+
+
+=== ACL Properties - "ACL Details"
+
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image25.png/?raw=true[ACL details]
+
+
+|===
+|*Parameter*|*Description*
+
+|ACL name a|
+
+In the "ACL Name" field, you can assign a name (e.g., Administration) to the ACL.
+
+Please ensure that the ACL name is unique, i.e., that it has been given only once. In case you try to create second ACL with the same ACL name, the system will block the request and show an error message.
+
+*NOTE:* Once the system saves the "ACL name" field after closing the dialog box, you cannot modify it afterwards.
+
+|Description|In the "Description" field, you can enter additional information regarding the responsibilities of this ACL.
+|ACL group|For further classification of this ACL, you can specify what ACL group the ACL belongs to.
+|Groups in this ACL a|
+
+Here you can specify what groups are part of this ACL.
+
+*NOTE:* This is the main mechanism of assigning rights to group users.
+
+|ACL rights|Here you can specify collection of rights that are part of this ACL.
+|===
+
+
+|===
+a|
+*Template ACLs*
+
+For your convenience for each template created within Circularo, 2 ACLs with predefined rights are created:
+
+- *read_<template name>* - allows users of group it is assigned to to view documents specific to <template_name>
+- *edit_<template_name>* - allows users of group it is assigned to to create and edit documents specific to <template_name>
+
+By assigning users to groups within these ACL you can grant or limit users access to document templates within Circularo.
+|===
+
+
+== Rights
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image34.png/?raw=true[Rights list]
+
+
+=== Right types within Circularo
+
+Following types of right classification is present in Circularo:
+
+* *Generic*
+** *UI feature* - right to view / use part of frontend
+** *Module* - right to use a functional block within Circularo
+** *Admin* - right to view / use part of administration page
+* *Document* - rights used by ACLs generated when creating templates
+** *edit_<template name>* - right to create / edit documents of <template name>
+** *read_<template name>* - right to view / read documents of <template name>
+* *Workflow* - rights to use workflow action within specific workflow. The right name must be in the format “w-<workflow name>-<action name>”
+		
+
+
+For the maintenance of rights the following editing options are available:
+
+* If you want to edit an existing right, click on the appropriate entry in the list of rights, the edit dialog will open
+* If you need to create a new right, click the [Add right] button
+* To remove a right, click on the [x] icon on the right side of the right list
+
+=== Right Properties - "Right Details"
+
+image::https://github.com/PALAXO/Circularo-docs/blob/master/Circularo-adminDoc/images/image3.png/?raw=true[Rights details]
+
+
+|===
+|*Parameter*|*Description*
+
+|Right name a|
+In the "Right name" field, you can assign a name (e.g., access_archive) to the right.
+
+Please ensure that the right name is unique, i.e., that it has been given only once. In case you try to create second right with the same right name, the system will block the request and show an error message.
+
+*NOTE:* Once the system saves the "Right name" field after closing the dialog box, you cannot modify it afterwards.
+
+|Description|In the "Description" field, you can enter additional information regarding the responsibilities of this right.
+|Right group|For further classification of this right, you can specify what right group the right belongs to.
+|Right class|Specify the type of the right (generic, document or workflow).
+|===
